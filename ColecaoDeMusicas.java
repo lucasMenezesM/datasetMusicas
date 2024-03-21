@@ -6,4 +6,5 @@ public interface ColecaoDeMusicas {
   public int obterTotalMusicas();
   public void trocarPosicaoMusicas(int posicao1, int posicao2);
   public void alterarMusica(int posicaoMusica, Musica novaMusica);
+  public void ordenar(Ordenador ordenador);
 } 

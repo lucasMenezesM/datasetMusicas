@@ -85,5 +85,10 @@ public class VetorDeMusicas implements ColecaoDeMusicas{
         this.musicas[posicao2] = aux;
     }
 
+    @Override
+    public void ordenar(Ordenador ordenador) {
+        ordenador.ordenar(this);
+    }
+
     
 }

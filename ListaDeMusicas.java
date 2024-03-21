@@ -152,6 +152,10 @@ public class ListaDeMusicas implements ColecaoDeMusicas  {
         noAtual2.setMusica(musicaTemp);
     }
 
+    public void ordenar(Ordenador ordenador){
+        ordenador.ordenar(this);
+    }
+
     public No obterNo(int posicao){
         if(this.noInicial == null){
             System.out.println("A lista está vazia");

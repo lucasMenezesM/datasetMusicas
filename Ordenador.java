@@ -1,4 +1,3 @@
 public interface Ordenador {
-
-    public void ordenar();
+    public void ordenar(ColecaoDeMusicas colecao);
 }

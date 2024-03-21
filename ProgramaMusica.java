@@ -8,6 +8,10 @@ public class ProgramaMusica {
         
         // ColecaoDeMusicas vetorMusicas = new VetorDeMusicas(); //vetor de músicas
         ColecaoDeMusicas colecaoMusicas = new ListaDeMusicas(); //lista encadeada
+        Ordenador bubble = new BubbleSort();
+        Ordenador selection = new SelectionSort();
+
+        
 
         // Musica musica1 = new Musica("1", "primeira musica", "test", "test", "test", "test");
         // Musica musica2 = new Musica("2", "segunda musica", "test2", "test2", "test2", "test2");
@@ -31,6 +35,8 @@ public class ProgramaMusica {
         System.out.println(colecaoMusicas.obterMusica(500).getTitle());
         listarMenu();
         int funcionalidade = inputData.nextInt();
+
+        bubble.ordenar(colecaoMusicas);
         
         switch (funcionalidade) {
             case 1:
@@ -147,6 +153,6 @@ public class ProgramaMusica {
     
     public static void listarMenu(){
         System.out.println("\n*********Qual funcionalidade gostaria de executar?*********\n");
-        System.out.println("1- Adição de músicas\n2- Exclusão de músicas\n3- Troca de posição de músicas\n4- Alterar uma música\n5- Finalizar programa");
+        System.out.println("1- Adição de músicas\n2- Exclusão de músicas\n3- Troca de posição de músicas\n4- Alterar uma música\n5- Ordenar\n6- Finalizar programa");
     }
 }
